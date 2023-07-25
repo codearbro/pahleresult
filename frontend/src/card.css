@@ -1,0 +1,20 @@
+.card{
+    width:300px;
+    height:700px;
+    border:3px solid black;
+}
+.cardHeading{
+    border: 3px solid black;
+    padding: 15px;
+    font-size: 30px;
+    width: 300px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+background-color: rgb(15, 223, 15);
+}
+.carddata{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-left:20px ;
+}

@@ -1,0 +1,18 @@
+.wholePage{
+    width: 100%;
+    align-items: center;
+}
+.Card1{
+    float: left;
+    margin-left: 200px;
+    /* position: absolute; */
+}
+.Card2{
+    /* position: absolute; */
+    float: left;
+    margin-left: 30px;
+}
+.Card3{
+    float: left;
+    margin-left: 30px;
+}

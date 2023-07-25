@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import Logo from './logo'
 import Update from "./update";
+import Card from "./card";
+import './App.css'
 function App(){
 
   const [data, setData] = useState([])
@@ -11,10 +13,20 @@ function App(){
     .then(err => console.log(err));
   },[])
   return(
-    <div>
+    <div className="wholePage">
       <Logo></Logo>
       <Update></Update>
-      <table>
+      <div className="Card1">
+      <Card></Card>
+      </div>
+      <div className="Card2">
+      <Card></Card>
+      </div>
+      <div className="Card3"> 
+      <Card></Card>
+      </div>
+      
+      {/*<table>
         <thead>
           <th>ID</th>
           <th>Name</th>
@@ -31,7 +43,7 @@ function App(){
             </tr>
           ))}
         </tbody>
-      </table>
+          </table>*/}
     </div>
   )
 }

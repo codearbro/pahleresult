@@ -9,15 +9,15 @@ function Update(){
     .then(err => console.log(err));
   },[])
     return(
-        <div>
-            <div className='headline'>
+        <div className='update'>
+            <div className='Top'>
             <span>Find The Right Result</span>
             </div>
-            <div className='b2'>
-                <span className='up'>New Updates</span>
+            <div className='Mid'>
+                <span className='Heading'>New Updates</span>
                 {update.map((d, i) =>  (
             <ul key={i} className='data'>
-              <li>{d.Name}</li>
+              <li>{d.Data}</li>
             </ul>
           ))}
             </div>

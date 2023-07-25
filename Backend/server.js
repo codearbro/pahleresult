@@ -14,7 +14,7 @@ const db = mysql.createConnection({
 
 app.get('/users',(re,res)=>
 {
-    const sql = "SELECT * FROM user";
+    const sql = "SELECT * FROM posts";
     db.query(sql,(err,data)=>{
         if(err)
         return res.json(err);

@@ -1,13 +1,35 @@
-.headline{
+.update{
+    width: 700px;
+    height: 650px;
+    /* border: solid black 1px; */
+}
+.Top{
     width: 400px;
     height: 200px;
-    border: solid black 1px;
+    /* border: solid green 2px; */
     margin-left: 50px;
     margin-top: 50px;
 }
-.headline span{
+.Top span{
     font-size: 60px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+}
+.Mid{
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 600px;
+    margin-left: 100px;
+}
+.Heading{
+    font-family: 'Arial', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(15, 223, 15);
+}
+.data{
+    font-family: 'Arial', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
 }
