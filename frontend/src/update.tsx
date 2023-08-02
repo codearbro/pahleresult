@@ -1,7 +1,7 @@
 import './update.css'
 import { useState, useEffect } from 'react';
 function Update(){
-    const [update, setData] = useState([])
+    const [update, setData] = useState<any[]>([])
   useEffect(()=>{
     fetch('http://localhost:8081/users')
     .then(res => res.json())
@@ -17,7 +17,7 @@ function Update(){
                 <span className='Heading'>New Updates</span>
                 {update.map((d, i) =>  (
             <ul key={i} className='data'>
-              <li>{d.Data}</li>
+              <li><a href ="https://codearbro.com">{d.Data}</a></li>
             </ul>
           ))}
             </div>

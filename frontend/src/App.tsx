@@ -5,7 +5,7 @@ import Card from "./card";
 import './App.css'
 function App(){
 
-  const [data, setData] = useState([])
+  const [data, setData] = useState<any[]>([])
   useEffect(()=>{
     fetch('http://localhost:8081/users')
     .then(res => res.json())
@@ -26,7 +26,9 @@ function App(){
       <Card></Card>
       </div>
       
-      {/*<table>
+      {
+        /*
+      <table>
         <thead>
           <th>ID</th>
           <th>Name</th>
@@ -43,7 +45,8 @@ function App(){
             </tr>
           ))}
         </tbody>
-          </table>*/}
+          </table>
+          */}
     </div>
   )
 }

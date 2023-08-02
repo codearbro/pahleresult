@@ -2,7 +2,7 @@ import './card.css';
 import { useState, useEffect } from 'react';
 
 function Card(){
-    const [Card, setData] = useState([])
+    const [Card, setData] = useState<any[]>([])
   useEffect(()=>{
     fetch('http://localhost:8081/users')
     .then(res => res.json())
